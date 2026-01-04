@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@fontsource/oswald/400.css';
-@import '@fontsource/oswald/500.css';
-@import '@fontsource/oswald/600.css';
-@import '@fontsource/oswald/700.css';
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
+@import "@fontsource/oswald/400.css";
+@import "@fontsource/oswald/500.css";
+@import "@fontsource/oswald/600.css";
+@import "@fontsource/oswald/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
 
-/* Ilahi Travels Design System - "Into the Wild" Theme */
+/* travel agency Design System - "Into the Wild" Theme */
 
 @layer base {
   :root {
@@ -59,13 +59,21 @@
     --glass-border: 150 20% 30%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(180deg, hsl(150 48% 5% / 0.3) 0%, hsl(150 48% 9%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(150 40% 14%) 0%, hsl(150 40% 10%) 100%);
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(150 48% 5% / 0.3) 0%,
+      hsl(150 48% 9%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(150 40% 14%) 0%,
+      hsl(150 40% 10%) 100%
+    );
     --gradient-glow: 0 0 30px hsl(48 100% 50% / 0.3);
 
     /* Typography */
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Inter", sans-serif;
 
     /* Sidebar (not used much but required) */
     --sidebar-background: 150 48% 9%;
@@ -120,7 +128,12 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
     font-weight: 600;
     letter-spacing: 0.02em;

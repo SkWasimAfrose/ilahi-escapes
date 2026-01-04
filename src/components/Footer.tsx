@@ -17,12 +17,12 @@ const Footer = () => {
           >
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/logo.jpg" 
-                alt="Ilahi Travels Logo" 
+                src="/logo.png" 
+                alt="travel agency Logo" 
                 className="w-12 h-12 object-contain rounded-full border border-border"
               />
               <span className="font-heading text-2xl font-bold text-foreground">
-                ILAHI TRAVELS
+                TRAVEL AGENCY
               </span>
             </div>
             <p className="font-body text-muted-foreground text-lg mb-6 max-w-md">
@@ -30,7 +30,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com/ilahitravels"
+                href="https://instagram.com/skwasimafrose"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/918178349129"
+                href="https://wa.me/918101389536"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary transition-all"
@@ -88,10 +88,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="tel:+918178349129"
+                  href="tel:+918101389536"
                   className="font-body text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +91 8178349129
+                  +91 8101389536
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -100,13 +100,13 @@ const Footer = () => {
                   href="mailto:hello@ilahitravels.com"
                   className="font-body text-muted-foreground hover:text-primary transition-colors"
                 >
-                  hello@ilahitravels.com
+                  ww.webdev@zohomail.in
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="font-body text-muted-foreground">
-                  New Delhi, India
+                  Kalyani, West Bengal, India
                 </span>
               </li>
             </ul>
@@ -118,9 +118,22 @@ const Footer = () => {
       <div className="border-t border-border">
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="font-body text-sm text-muted-foreground">
-              © 2024 Ilahi Travels. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <p className="font-body text-sm text-muted-foreground">
+                © 2024 Travel Agency. All rights reserved.
+              </p>
+              <p className="font-body text-xs text-muted-foreground/60">
+                Built and Designed by{" "}
+                <a 
+                  href="https://whoiswasim.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  Sk Wasim Afrose
+                </a>
+              </p>
+            </div>
             <div className="flex items-center gap-6">
               <a
                 href="#"

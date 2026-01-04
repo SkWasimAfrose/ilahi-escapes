@@ -25,13 +25,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <img 
-              src="/logo.jpg" 
-              alt="Ilahi Travels Logo" 
+            <img
+              src="/logo.png"
+              alt="Travel Agency Logo"
               className="w-10 h-10 object-contain rounded-full"
             />
             <span className="font-heading text-xl md:text-2xl font-bold text-foreground tracking-wider">
-              ILAHI TRAVELS
+              TRAVEL AGENCY
             </span>
           </a>
 
