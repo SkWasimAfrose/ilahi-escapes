@@ -21,13 +21,13 @@ const domesticTrips = [
     title: "Meghalaya",
     duration: "6N/7D",
     price: "₹21,999",
-    image: "https://images.unsplash.com/photo-1597000644201-87f3a7c08f7e?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1625826415766-001bd75aaf52?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Winter Zanskar",
     duration: "6N/7D",
     price: "₹26,999",
-    image: "https://images.unsplash.com/photo-1618245318763-453825b25922?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1710573635319-8a9b33fedacb?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
