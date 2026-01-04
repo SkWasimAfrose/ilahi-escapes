@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Phone, MessageCircle, Mountain, Mail, MapPin } from "lucide-react";
+import { Instagram, Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +16,11 @@ const Footer = () => {
             className="lg:col-span-2"
           >
             <div className="flex items-center gap-3 mb-6">
-              <Mountain className="w-10 h-10 text-primary" />
+              <img 
+                src="/logo.jpg" 
+                alt="Ilahi Travels Logo" 
+                className="w-12 h-12 object-contain rounded-full border border-border"
+              />
               <span className="font-heading text-2xl font-bold text-foreground">
                 ILAHI TRAVELS
               </span>

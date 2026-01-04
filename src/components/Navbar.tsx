@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Mountain } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -25,7 +25,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <Mountain className="w-8 h-8 text-primary" />
+            <img 
+              src="/logo.jpg" 
+              alt="Ilahi Travels Logo" 
+              className="w-10 h-10 object-contain rounded-full"
+            />
             <span className="font-heading text-xl md:text-2xl font-bold text-foreground tracking-wider">
               ILAHI TRAVELS
             </span>
