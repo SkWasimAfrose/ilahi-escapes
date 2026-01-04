@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Search, MapPin, Calendar } from "lucide-react";
+import { Search, MapPin, Calendar, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 
@@ -103,15 +103,18 @@ const Hero = () => {
             {/* Destination */}
             <div className="flex items-center gap-3 flex-1 w-full md:w-auto">
               <MapPin className="w-5 h-5 text-primary shrink-0" />
-              <div className="flex-1">
+              <div className="flex-1 relative">
                 <p className="text-xs text-muted-foreground uppercase tracking-wide">Destination</p>
-                <select className="w-full bg-transparent text-foreground font-body text-sm md:text-base outline-none cursor-pointer">
-                  <option value="">Where to?</option>
-                  <option value="spiti">Spiti Valley</option>
-                  <option value="kashmir">Kashmir</option>
-                  <option value="bhutan">Bhutan</option>
-                  <option value="vietnam">Vietnam</option>
-                </select>
+                <div className="relative">
+                  <select className="w-full bg-transparent text-foreground font-body text-sm md:text-base outline-none cursor-pointer appearance-none pr-8 [&>option]:bg-card [&>option]:text-foreground">
+                    <option value="">Where to?</option>
+                    <option value="spiti">Spiti Valley</option>
+                    <option value="kashmir">Kashmir</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="vietnam">Vietnam</option>
+                  </select>
+                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-primary pointer-events-none" />
+                </div>
               </div>
             </div>
 
@@ -120,15 +123,26 @@ const Hero = () => {
             {/* Month */}
             <div className="flex items-center gap-3 flex-1 w-full md:w-auto">
               <Calendar className="w-5 h-5 text-primary shrink-0" />
-              <div className="flex-1">
+              <div className="flex-1 relative">
                 <p className="text-xs text-muted-foreground uppercase tracking-wide">When</p>
-                <select className="w-full bg-transparent text-foreground font-body text-sm md:text-base outline-none cursor-pointer">
-                  <option value="">Select Month</option>
-                  <option value="oct">October 2024</option>
-                  <option value="nov">November 2024</option>
-                  <option value="dec">December 2024</option>
-                  <option value="jan">January 2025</option>
-                </select>
+                <div className="relative">
+                  <select className="w-full bg-transparent text-foreground font-body text-sm md:text-base outline-none cursor-pointer appearance-none pr-8 [&>option]:bg-card [&>option]:text-foreground">
+                    <option value="">Select Month</option>
+                    <option value="jan-2026">January 2026</option>
+                    <option value="feb-2026">February 2026</option>
+                    <option value="mar-2026">March 2026</option>
+                    <option value="apr-2026">April 2026</option>
+                    <option value="may-2026">May 2026</option>
+                    <option value="jun-2026">June 2026</option>
+                    <option value="jul-2026">July 2026</option>
+                    <option value="aug-2026">August 2026</option>
+                    <option value="sep-2026">September 2026</option>
+                    <option value="oct-2026">October 2026</option>
+                    <option value="nov-2026">November 2026</option>
+                    <option value="dec-2026">December 2026</option>
+                  </select>
+                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-primary pointer-events-none" />
+                </div>
               </div>
             </div>
 

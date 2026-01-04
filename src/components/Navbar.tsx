@@ -68,31 +68,31 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed top-20 right-0 bottom-0 w-80 bg-card/95 backdrop-blur-xl border-l border-border lg:hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border lg:hidden overflow-hidden"
           >
-            <div className="flex flex-col p-8 gap-6">
+            <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link, index) => (
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  initial={{ x: 50, opacity: 0 }}
+                  initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ delay: index * 0.05 }}
                   onClick={() => setIsOpen(false)}
-                  className="font-heading text-xl text-foreground hover:text-primary transition-colors uppercase tracking-wider"
+                  className="font-heading text-lg text-foreground hover:text-primary transition-colors uppercase tracking-wider py-2"
                 >
                   {link.name}
                 </motion.a>
               ))}
               <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="mt-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="mt-2 pt-4 border-t border-border"
               >
                 <Button className="btn-primary w-full">Find My Trip</Button>
               </motion.div>
